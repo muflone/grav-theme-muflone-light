@@ -17,9 +17,9 @@ You should now have all the theme files under
 # Requirements
 
 The Muflone theme requires also the following plugins:
-  * [grav-plugin-muflone]
+  * [grav-plugin-shortcode-muflone]
   * [grav-plugin-shortcode-core]
 
 [grav]: http://github.com/getgrav/grav
-[grav-plugin-muflone]: https://github.com/muflone/grav-plugin-muflone
+[grav-plugin-shortcode-muflone]: https://github.com/muflone/grav-plugin-muflone
 [grav-plugin-shortcode-core]: https://github.com/getgrav/grav-plugin-shortcode-core
