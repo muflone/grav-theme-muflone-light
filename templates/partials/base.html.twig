@@ -13,7 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="author" href="https://plus.google.com/+FabioCastelli"/>
-    <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+    <title>{% if header.title %}{{ header.title|e('html') }}{% else %}{{ site.title|e('html') }}{% endif %}</title>
     {% include 'partials/favicons.html.twig' with { 'product_name': active_product.short_name } %}
     <link rel="canonical" href="{{ page.url(true, true) }}" />
 

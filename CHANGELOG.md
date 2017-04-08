@@ -1,3 +1,9 @@
+# v0.5.1
+## 08/04/2017
+
+1. [](#fixed)
+    * Page title will show the site title only when the page title is missing.
+
 # v0.5.0
 ## 08/04/2017
 
