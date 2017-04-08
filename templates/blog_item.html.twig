@@ -8,4 +8,8 @@
           <hr />
   {% endif %}
     {{ page.content }}
+    <hr />
+  {% include 'partials/social.html.twig' with { social_type:'google' } %}
+  {% include 'partials/social.html.twig' with { social_type:'twitter' } %}
+  {% include 'partials/social.html.twig' with { social_type:'disqus' } %}
 {% endblock %}

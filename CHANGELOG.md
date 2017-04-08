@@ -1,3 +1,10 @@
+# v0.5.0
+## 08/04/2017
+
+1. [](#new)
+    * Added social buttons for Google+ and Twitter
+    * Added Disqus comments box
+
 # v0.4.0
 ## 26/03/2017
 

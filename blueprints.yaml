@@ -43,6 +43,9 @@ form:
               type: text
               default: https://www.github.com/muflone
               label: GitHub repositories URL
+            disqus:
+              type: text
+              label: Disqus user name
 
         tab_products:
           type: tab
