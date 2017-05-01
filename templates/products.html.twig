@@ -12,7 +12,7 @@
   {% for product in theme_config.products %}
               <div class="product product-column">
                 <div><a href="{{ product.short_name }}">
-                  <img src="/resources/{{ product.short_name }}/icons/android-icon-144x144.png">
+                  <img src="{{ cdn('/resources/' ~ product.short_name ~ '/icons/android-icon-144x144.png') }}">
                   <div class="product-name">{{ product.name }}</div></a>
                   <div>{% if grav.language.getActive == 'it' %}{{ product.description_it }}{% else %}{{ product.description }}{% endif %}</div>
                 </div>

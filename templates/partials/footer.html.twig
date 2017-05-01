@@ -3,11 +3,11 @@
     <div class="footer">
       <div id="icons">
         <a href="{{ url('home') }}">
-          <img src="{{ url('resources/' ~ theme_config.home_product ~ '/icons/' ~ theme_config.icon_footer) }}" title="Home">
+          <img src="{{ cdn('resources/' ~ theme_config.home_product ~ '/icons/' ~ theme_config.icon_footer) }}" title="Home">
         </a>
   {% for product in theme_config.products %}
         <a href="{{ url(product.short_name) }}">
-          <img src="{{ url('resources/' ~ product.short_name ~ '/icons/' ~ theme_config.icon_footer) }}" title="{{ product.name }}">
+          <img src="{{ cdn('resources/' ~ product.short_name ~ '/icons/' ~ theme_config.icon_footer) }}" title="{{ product.name }}">
         </a>
   {% endfor %}
       </div>

@@ -1,3 +1,9 @@
+# v0.6.0
+## 02/05/2017
+
+1. [](#new)
+    * Moved icons loading from local to CDN (using cdn-function plugin)
+
 # v0.5.1
 ## 08/04/2017
 

@@ -1,5 +1,5 @@
 name: Muflone
-version: 0.5.1
+version: 0.6.0
 description: Products theme for Muflone based on Architect
 icon: heart-o
 author:
@@ -13,6 +13,7 @@ license: GPL
 
 dependencies:
   - shortcode-muflone
+  - cdn-function
 
 form:
   validation: loose
