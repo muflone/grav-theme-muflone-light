@@ -14,7 +14,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="author" href="https://plus.google.com/+FabioCastelli"/>
     <title>{% if header.title %}{{ header.title|e('html') }}{% else %}{{ site.title|e('html') }}{% endif %}</title>
-    {% include 'partials/favicons.html.twig' with { 'product_name': active_product.short_name } %}
+    <link rel="apple-touch-icon"      sizes="57x57"   href="{{ url('theme://assets/images/icons/apple-icon-57x57.png') }}">
+    <link rel="apple-touch-icon"      sizes="60x60"   href="{{ url('theme://assets/images/icons/apple-icon-60x60.png') }}">
+    <link rel="apple-touch-icon"      sizes="72x72"   href="{{ url('theme://assets/images/icons/apple-icon-72x72.png') }}">
+    <link rel="apple-touch-icon"      sizes="76x76"   href="{{ url('theme://assets/images/icons/apple-icon-76x76.png') }}">
+    <link rel="apple-touch-icon"      sizes="114x114" href="{{ url('theme://assets/images/icons/apple-icon-114x114.png') }}">
+    <link rel="apple-touch-icon"      sizes="120x120" href="{{ url('theme://assets/images/icons/apple-icon-120x120.png') }}">
+    <link rel="apple-touch-icon"      sizes="144x144" href="{{ url('theme://assets/images/icons/apple-icon-144x144.png') }}">
+    <link rel="apple-touch-icon"      sizes="152x152" href="{{ url('theme://assets/images/icons/apple-icon-152x152.png') }}">
+    <link rel="apple-touch-icon"      sizes="180x180" href="{{ url('theme://assets/images/icons/apple-icon-180x180.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ url('theme://assets/images/icons/android-icon-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32"   href="{{ url('theme://assets/images/icons/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96"   href="{{ url('theme://assets/images/icons/favicon-96x96.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16"   href="{{ url('theme://assets/images/icons/favicon-16x16.png') }}">
+    <link rel="icon" type="image/x-icon"              href="{{ url('theme://assets/images/icons/favicon.ico') }}">
+    <link rel="shortcut icon" type="image/x-icon"     href="{{ url('theme://assets/images/icons/favicon.ico') }}">
     <link rel="canonical" href="{{ page.url(true, true) }}" />
 
     {% block stylesheets %}
@@ -30,14 +44,13 @@
         {% do assets.addJs('jquery', 100) %}
     {% endblock %}
     {{ assets.js() }}
-    {% include 'partials/cookie_consent.html.twig' %}
 {% endblock head%}
 </head>
 <body>
 {% block header %}
     <header>
       <div class="inner">
-        <a href="{{ url(active_product.short_name) }}"><img src="{{ cdn('resources/' ~ active_product.short_name ~ '/icons/ms-icon-144x144.png') }}" style="padding-right: 20px;" align="left"></a>
+        <a href="{{ url('/') }}"><img src="{{ url('theme://assets/images/icons/ms-icon-144x144.png') }}" style="padding-right: 20px;" align="left"></a>
         <h1>{{ active_product.name }}</h1>
         <h2>{{ page.title }}</h2>
         {{ 'THEME_MUFLONE.GITHUB.VIEW_PROJECT' | t(active_product.github) }}

@@ -1,19 +1,15 @@
-name: Muflone
-version: 0.6.0
-description: Products theme for Muflone based on Architect
+name: Muflone Light
+version: 0.1.0
+description: Products light theme for Muflone based on Architect
 icon: heart-o
 author:
   name: Muflone
   email: webreg@vbsimple.net
-homepage: https://github.com/muflone/grav-theme-muflone
-demo: https://github.com/muflone/grav-theme-muflone/blob/master/README.md
-bugs: https://github.com/muflone/grav-theme-muflone/issues
+homepage: https://github.com/muflone/grav-theme-muflone-light
+demo: https://github.com/muflone/grav-theme-muflone-light/blob/master/README.md
+bugs: https://github.com/muflone/grav-theme-muflone-light/issues
 readme: 
 license: GPL
-
-dependencies:
-  - shortcode-muflone
-  - cdn-function
 
 form:
   validation: loose
@@ -32,14 +28,6 @@ form:
             analytics_username:
               type: text
               label: Google Analytics user name
-            home_product:
-              type: text
-              default: home
-              label: Product folder for home
-            icon_footer:
-              type: text
-              default: favicon-32x32.png
-              label: Filename for icon on footer
             github:
               type: text
               default: https://www.github.com/muflone
@@ -61,71 +49,11 @@ form:
                   type: text
                   label: Name
                   help: Product name
-                .short_name:
+                .icon:
                   type: text
-                  label: Short name
-                  help: Short product name
-                .description:
+                  label: Product icon
+                  help: Product icon
+                .url:
                   type: text
-                  label: Description
-                  help: Product description
-                .description_it:
-                  type: text
-                  label: Description (IT)
-                  help: Product description in Italian language
-                .github:
-                  type: text
-                  label: Repository URL
-                  help: GitHub source repository
-                .translations:
-                  type: text
-                  label: Translations URL
-                  help: Translations page URL
-                .languages:
-                  type: selectize
-                  label: Languages
-                  help: Language names
-                  validate:
-                    type: commalist
-                .versions:
-                  type: list
-                  label: Versions
-                  help: Versions of the packages
-                  fields:
-                    .version:
-                      type: text
-                      label: Version
-                    .shortver:
-                      type: text
-                      label: Short version
-                    .packages:
-                      type: list
-                      label: Packages
-                      fields:
-                        .type:
-                          type: select
-                          label: Package type
-                          options:
-                            source: Source code
-                            debian: Debian
-                            debian32: Debian i386 (32 bit)
-                            debian64: Debian amd64 (64 bit)
-                            archlinux: Arch Linux
-                            archlinux_i686: Arch Linux i686 (32 bit)
-                            archlinux_x86_64: Arch Linux x86_64 (64 bit)
-                            archlinux_aur: Arch Linux AUR
-                        .filename:
-                          type: text
-                          label: File name
-                        .size:
-                          type: int
-                          label: File size
-                        .md5sum:
-                          type: text
-                          label: MD5 Checksum
-                        .sources:
-                          type: selectize
-                          label: Package sources
-                          help: Valid values: muflone, github, archlinux, aur
-                          validate:
-                            type: commalist
+                  label: URL
+                  help: URL to the page
