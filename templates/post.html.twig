@@ -1,11 +1,19 @@
 {% extends 'partials/base.html.twig' %}
+{% do assets.addCss('theme://assets/css/font-genericons.css', 90) %}
+{% do assets.addCss('theme://assets/css/layout-post.css', 90) %}
 
 {% block content %}
-  {% if page.header.summary %}
-          <div class="title">{{ page.header.summary }}</div>
-          <hr />
-  {% endif %}
     {{ page.content }}
+
+    <div class="post-date">{{ page.date|date(config.system.pages.dateformat.short) }} <time class="genericon genericon-day" datetime="{{ page.date|date(config.system.pages.dateformat.short) }}"></time></div>
+    {% if page.taxonomy.tag %}
+    <div class="genericon genericon-tag">
+      {% for tag in page.taxonomy.tag %}
+      <a class="tag" href="{{ base_url }}/tag{{ config.system.param_sep }}{{ tag }}">{{ tag }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+
     <hr />
   {% include 'partials/social.html.twig' with { social_type:'google' } %}
   {% include 'partials/social.html.twig' with { social_type:'twitter' } %}
