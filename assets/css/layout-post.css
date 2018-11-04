@@ -1,8 +1,21 @@
-.genericon {
+.post-date {
+  float: right;
   font-weight: bold;
+  font-size: 16px;
+  vertical-align: top;
 }
 
-.genericon-day {
-  text-align: right;
+a.tag {
+  font-size: 15px;
+  color: #2f7acd;
+  font-size: 0.8rem;
+  border: 1px solid #2f7acd;
+  border-radius: 3px;
+  padding: 0.1rem 0.4rem 0.3rem 0.4rem;
+  text-transform: uppercase;
 }
 
+a.tag:hover {
+  background: #2f7acd;
+  color: #FFFFFF;
+}
